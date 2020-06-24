@@ -1,0 +1,339 @@
+        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+        @keyframes appears {
+            0% {
+                opacity: 0
+            }
+            100% {
+                opacity: 1
+            }
+        }
+        
+        body {
+            margin: 0px;
+            background-color: #121212;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .main {
+            margin: 35px;
+        }
+        
+        .father {
+            opacity: 0;
+            animation: appears 1s linear forwards;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        
+        .main_name {
+            opacity: 0;
+            animation: appears 1s linear forwards;
+        }
+        
+        .main_name h1 {
+            font-size: 40px;
+            margin: 0;
+            color: white;
+        }
+        
+        .main_name p {
+            opacity: 0;
+            animation: appears 1s linear 1s forwards;
+            font-size: 18px;
+            margin: 0;
+            color: #1db954;
+            font-style: italic;
+        }
+        
+        .sub_contents {
+            opacity: 0;
+            animation: appears 1s linear 4s forwards;
+        }
+        
+        .sub_contents_list {
+            list-style: none;
+            font-size: 20px;
+            color: white;
+            display: flex;
+        }
+        
+        .button {
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: 3px solid #1db954;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            padding: 5px;
+            transition: all 0.25s linear;
+        }
+        
+        .button:hover {
+            text-decoration: none;
+            color: #121212;
+            background-color: #1db954;
+            padding: 7.5px;
+            border-radius: 5px;
+        }
+        
+        .addinjs {
+            text-decoration: none;
+            color: #121212;
+            background-color: #1db954;
+            padding: 7.5px;
+            border-radius: 5px;
+        }
+        
+        .inicial_content {
+            opacity: 0;
+            animation: appears 1s linear 2s forwards;
+            margin-top: 100px;
+            height: auto;
+            width: auto;
+            text-align: center;
+        }
+        
+        .inicial_content h1 {
+            font-size: 35px;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .inicial_content h2 {
+            opacity: 0;
+            animation: appears 1s linear 3s forwards;
+        }
+        
+        .inicial_content_green {
+            opacity: 0;
+            animation: appears 1s linear 3s forwards;
+            margin: 0 auto;
+            width: 35%;
+            border-bottom: 2px solid #1db954;
+        }
+        
+        .div_contents {
+            height: 240px;
+            margin-top: 75px;
+            border-radius: 5px;
+            color: white;
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: #282828;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        
+        .about_image {
+            margin-left: 12.5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 0px;
+            border-radius: 5px;
+        }
+        
+        .about_text {
+            text-align: justify;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        
+        .about_services {
+            text-align: justify;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        
+        .about_services h3 {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .about_services_list {
+            list-style-type: square;
+        }
+        
+        #about {
+            display: none;
+        }
+        
+        #services {
+            display: none;
+        }
+        
+        #contact {
+            display: none;
+        }
+        
+        .div_transition {
+            animation: appears 1s linear forwards;
+        }
+        
+        .contact_me {
+            align-self: center;
+            margin: 0 auto;
+        }
+        
+        .contact_me i {
+            margin: 30px;
+        }
+        
+        .contact_me h3 {
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            padding-bottom: 20px;
+        }
+        
+        .contact_me i:hover {
+            color: #1db954;
+        }
+        /* Telefone */
+        
+        @media (max-width: 767px) {
+            .father {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+            .sub_contents {
+                margin-left: 0;
+                margin-top: 50px;
+                width: 100%;
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+            }
+            .sub_contents_list {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+            }
+            .sub_contents_list ul,
+            li {
+                margin: 0;
+                margin-right: 25px;
+            }
+            .main_name h1 {
+                font-size: 25px;
+            }
+            .main_name p {
+                font-size: 15px;
+            }
+            .inicial_content h1 {
+                font-size: 20px;
+            }
+            .inicial_content h2 {
+                font-size: 15px;
+            }
+            /* Fim da estilização do topo */
+            .div_contents {
+                height: auto;
+                margin-top: 75px;
+                border-radius: 5px;
+                color: white;
+                background-color: #282828;
+                width: 300px;
+                display: flex;
+                justify-content: center;
+            }
+            .about_image {
+                display: none;
+            }
+            .about_text {
+                font-size: 15px;
+                text-align: left;
+            }
+            .about_services_list {
+                text-align: left;
+                margin: 0;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .about_services_list li {
+                margin-top: 5px;
+            }
+            .about_services p {
+                font-size: 20px;
+                text-align: center;
+            }
+            .contact_me {
+                display: flex;
+                flex-direction: column;
+            }
+            .contact_me a {
+                margin: 10px;
+                text-align: center;
+            }
+            .contact_me h3 {
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+        /* Tablet */
+        
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .sub_contents {
+                margin-left: auto;
+                margin-top: 50px;
+                width: 100%;
+                font-size: 15px;
+            }
+            .sub_contents_list {
+                margin-left: 30%;
+            }
+            .sub_contents_list ul,
+            li {
+                margin: 0;
+                margin-left: 20px;
+            }
+            .about_text {
+                font-size: 12px;
+                text-align: justify;
+            }
+            .about_services_list {
+                font-size: 12px;
+                text-align: left;
+                margin: 0;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .about_services_list li {
+                margin-top: 5px;
+            }
+            .contact_me h3 {
+                display: none;
+            }
+            .contact_me {
+                display: flex;
+                justify-content: center;
+            }
+            .contact_me a {
+                font-size: 10px;
+            }
+        }
+        /* Desktop */
+        
+        @media (min-width: 1024px) {
+            /* estilos aqui */
+            .sub_contents_list li {
+                padding-left: 50px;
+            }
+            .sub_contents {
+                margin-left: auto;
+            }
+        }
