@@ -63,6 +63,10 @@
             color: white;
             display: flex;
         }
+
+        .sub_contents_list li{
+            margin: 10px;
+        }
         
         .button {
             color: white;
@@ -73,7 +77,7 @@
             border-right: 0px;
             border-bottom: 0px;
             padding: 5px;
-            transition: all 0.25s linear;
+            transition: all 0.1s linear;
         }
         
         .button:hover {
@@ -81,7 +85,6 @@
             color: #121212;
             background-color: #1db954;
             padding: 7.5px;
-            border-radius: 5px;
         }
         
         .addinjs {
