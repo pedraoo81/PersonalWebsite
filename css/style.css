@@ -168,6 +168,10 @@
             list-style-type: square;
         }
         
+        .about_services_list li{
+            margin-top: 10px;
+        }
+        
         #about {
             display: none;
         }
